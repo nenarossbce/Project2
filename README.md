@@ -52,10 +52,10 @@ During the model phase, the KNN was used and the GridSearchCV was used to improv
 
 * The model is not great at predicting an indivdual's income over 50k. 
 
-###Summary
+### Summary
 The first step was to explore to decided which features would best help to predict the income over $50,000. The captial loss/gains had a lot of missing data and decided to drop those columns. In exploring the data, the features that were most helpful with the predictioning the income over $50,000 were age, education, occupatation and workclass. From the analysis the KNN model with the GridSearchCV performed the best but still had high false positives. In the last step, to balance the classes the class weight and SMOTE options were explored but neither helped to improve the model. 
 
-###Recommendation 
+### Recommendation 
 * The KNN model might predict beter if the data were more balanced. There were about 4330 values that were unknown or missing data. Having a more accurate dataset would improve the predictions for this model. 
 
 * Incorrectly estimating a person's income to be over $50,000 should not be used with this model due to the high false negatives.
